@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.9f184789.css",
+    "main.js": "/react-portfolio/static/js/main.3caf3392.js",
+    "static/js/787.5e016cca.chunk.js": "/react-portfolio/static/js/787.5e016cca.chunk.js",
+    "static/media/me.jpg": "/react-portfolio/static/media/me.abb7110904ad73085b45.jpg",
+    "static/media/softSkills.png": "/react-portfolio/static/media/softSkills.9352779b7bdf46ffc979.png",
+    "static/media/SocNet.jpg": "/react-portfolio/static/media/SocNet.534cb19ba8c20f66857b.jpg",
+    "static/media/jest.png": "/react-portfolio/static/media/jest.05a3e0410bb41943034a.png",
+    "static/media/todoImg.jpg": "/react-portfolio/static/media/todoImg.0885240f07de1686ff6e.jpg",
+    "static/media/git.png": "/react-portfolio/static/media/git.1dcf027e1ad2fbacbd8e.png",
+    "static/media/react.png": "/react-portfolio/static/media/react.37723f10fa601c0f876d.png",
+    "static/media/redux.svg": "/react-portfolio/static/media/redux.7704ea702b3d2b30acffc4660e90ca9b.svg",
+    "index.html": "/react-portfolio/index.html",
+    "static/media/typescript.svg": "/react-portfolio/static/media/typescript.b6a67c48c000563cf9b19d2e171feadc.svg",
+    "static/media/html5.svg": "/react-portfolio/static/media/html5.10080bf9eca0dcafeb4b353b2ce579ea.svg",
+    "static/media/materialUI.svg": "/react-portfolio/static/media/materialUI.c0958f97929482097efdccc254e938aa.svg",
+    "main.9f184789.css.map": "/react-portfolio/static/css/main.9f184789.css.map",
+    "main.3caf3392.js.map": "/react-portfolio/static/js/main.3caf3392.js.map",
+    "787.5e016cca.chunk.js.map": "/react-portfolio/static/js/787.5e016cca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f184789.css",
+    "static/js/main.3caf3392.js"
+  ]
+}
