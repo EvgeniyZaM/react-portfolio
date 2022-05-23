@@ -1,0 +1,17 @@
+@mixin burgerElement ($topValue) {
+  content: '';
+  position: absolute;
+  background-color: #e8e8e8;
+  width: 28px;
+  height: 3px;
+  left: 10px;
+  top: $topValue;
+}
+
+@mixin flex ($flexDirection, $justifyContent, $alignItems, $flexWrap: null) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap: $flexWrap;
+}

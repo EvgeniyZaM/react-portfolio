@@ -1,0 +1,40 @@
+@import './../../common/styles/variables.scss';
+@import './../../common/styles/mixins.scss';
+
+.navbarBlock {
+  @include flex (row, flex-end, stretch);
+  width: 100%;
+  height: 70px;
+  background-color: $secondaryBackgroundColor;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 100;
+
+  .content {
+    @include flex (row, space-between, stretch);
+    margin: 22px 60px 0px 0px;
+    height: 35px;
+    width: 500px;
+
+    a {
+      cursor: pointer;
+      font-size: 18px;
+      transition: .1s;
+
+      &:hover {
+        color: $decorColor;
+        border-bottom: 3px solid $decorColor;
+      }
+    }
+
+    .active {
+      color: $decorColor;
+      border-bottom: 3px solid $decorColor;
+    }
+  }
+
+  // на 625 удалится navbar
+  @media screen and (max-width: 625px) {
+    display: none;
+  }
+}

@@ -1,0 +1,75 @@
+@import './../../common/styles/variables.scss';
+@import './../../common/styles/mixins.scss';
+@import './../../common/styles/templates.scss';
+
+.contactMeBlock {
+  padding: 100px 0;
+
+  .container {
+    @extend %container;
+    @include flex(column, flex-start, center);
+
+    .form {
+      @include flex(column, flex-start, stretch);
+      width: 540px;
+      margin-top: 60px;
+
+      @media screen and (max-width: 610px) {
+        width: 100%;
+      }
+
+      .formInput,
+      .messageTextarea {
+        background-color: $secondaryBackgroundColor;
+        border: 1px solid #4a4a4a;
+        color: $textColor;
+        font-size: 12px;
+        line-height: 1.5;
+        outline: none;
+        margin-bottom: 1.2rem;
+
+        &:-webkit-autofill {
+          border: 1px solid #4a4a4a;
+          -webkit-text-fill-color: #495057;
+          -webkit-box-shadow: 0 0 0 1000px #252527 inset;
+          transition: background-color 5000s ease-in-out 0s;
+
+          &:focus {
+            border: 2px solid $secondaryBackgroundColor;
+          }
+        }
+      }
+
+      .formInput {
+        height: calc(1.5em + .75rem + 2px);
+        padding: .4rem 15px;
+
+        &:focus {
+          border: 1px solid transparent;
+          transition: all 0.4s ease-in-out 0s;
+        }
+      }
+
+      .messageTextarea {
+        min-height: 160px;
+        padding: 15px;
+        resize: none;
+
+        &:focus {
+          border: 1ps solid transparent;
+          transition: all 0.4s ease-in-out;
+          margin-top: 30px;
+        }
+      }
+
+      button[type='submit'] {
+        @extend %btnLink;
+        align-self: center;
+        background-color: transparent;
+        margin-top: 30px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Main } from './components/c2-Main/Main'
+import { Skills } from './components/c3-Skills/Skills'
+import { Projects } from './components/c4-Projects/Projects'
+import { Remote } from './components/c5-Remote/Remote'
+import { ContactMe } from './components/c6-ContactMe/ContactMe'
+import { Footer } from './components/c7-Footer/Footer'
+import { Navbar } from './components/c1-Navbar/Navbar'
+import { BurgerMenu } from './components/c9-BurgerMenu/BurgerMenu'
+import './App.scss'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <BurgerMenu />
+      <Main />
+      <Skills />
+      <Projects />
+      <Remote />
+      <ContactMe />
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

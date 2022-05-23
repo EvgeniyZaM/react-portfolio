@@ -1,0 +1,50 @@
+@import '../../../common/styles/variables';
+@import '../../../common/styles/mixins';
+
+.skillBlock {
+  font-family: $secondaryFont;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  width: 220px;
+  padding: 15px 30px;
+  margin-bottom: 40px;
+
+  .titleSection {
+    @include flex(column, center, center);
+
+    .logoContainer {
+      transform: rotate(45deg);
+      height: 80px;
+      width: 80px;
+      background-color: rgba(255, 255, 255, 0.1);
+      @include flex(row, center, center);
+      margin-bottom: 10px;
+
+      .logo {
+        height: 60px;
+        width: 60px;
+        transform: rotate(-45deg);
+
+        @media screen and (max-width: 415px) {
+          height: 40px;
+          width: 40px;
+        }
+      }
+
+      @media screen and (max-width: 415px) {
+        height: 60px;
+        width: 60px;
+      }
+    }
+
+    h3 {
+      margin: 12px 0;
+      letter-spacing: 5px;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 15px;
+  }
+}

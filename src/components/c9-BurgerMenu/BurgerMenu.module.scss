@@ -1,0 +1,86 @@
+@import './../../common/styles/variables.scss';
+@import './../../common/styles/mixins';
+
+.burgerBlock {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+
+  .burgerBtn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 101;
+
+    &:before {
+      @include burgerElement(12px);
+      transition: 0.5s;
+    }
+
+    span {
+      @include burgerElement(24px);
+    }
+
+    &:after {
+      @include burgerElement(36px);
+      transition: 0.5s;
+    }
+  }
+
+  .openBtn {
+    background-color: transparent;
+
+    &:before {
+      transform: rotate(45deg);
+      top: 18px;
+    }
+
+    span {
+      display: none;
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+      top: 18px;
+    }
+  }
+
+  .navbar {
+    @include flex(column, space-around, center);
+    height: 0;
+    padding: 15px 0;
+    background-color: rgba(33, 37, 41, 0.9);
+    width: 100%;
+    transform: translate(0, -150px);
+    transition: 0.7s;
+
+    a {
+      cursor: pointer;
+      font-size: 20px;
+      letter-spacing: 1px;
+      transition: .1s;
+
+      &:hover {
+        color: $decorColor;
+        border-bottom: 3px solid $decorColor;
+      }
+    }
+
+    .active {
+      color: $decorColor;
+      border-bottom: 3px solid $decorColor;
+    }
+  }
+
+  .open {
+    transform: translate(0, 0);
+    height: 150px;
+  }
+
+  // на 626 появится бургер
+  @media screen and (min-width: 626px) {
+    display: none;
+  }
+}

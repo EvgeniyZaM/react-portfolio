@@ -1,0 +1,20 @@
+@import './../../common/styles/variables.scss';
+@import './../../common/styles/mixins.scss';
+@import './../../common/styles/templates.scss';
+
+.remoteBlock {
+  @include flex(row, center, center);
+  background-color: $secondaryBackgroundColor;
+  min-height: 40vh;
+
+  .container {
+    @extend %container;
+    @include flex(column, space-between, center);
+    min-height: 25vh;
+    text-align: center;
+
+    .link {
+      @extend %btnLink;
+    }
+  }
+}

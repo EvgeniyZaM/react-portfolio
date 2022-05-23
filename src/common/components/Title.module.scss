@@ -1,0 +1,24 @@
+@import '../../common/styles/variables';
+
+.title {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 20px 0px 60px 0px;
+  position: relative;
+  letter-spacing: 5px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: $decorColor;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  @media screen and (max-width: 690px) {
+    text-align: center;
+  }
+}
