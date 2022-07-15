@@ -2,6 +2,7 @@
   "name": "react-portfolio-ts",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://EvgeniyZamatevskiy.github.io/react-portfolio",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
@@ -17,6 +18,7 @@
     "@types/react-dom": "^18.0.0",
     "@types/react-scroll": "^1.8.3",
     "@types/react-typing-effect": "^2.0.3",
+    "gh-pages": "^4.0.0",
     "node-sass": "^7.0.1",
     "react": "^18.1.0",
     "react-awesome-reveal": "^3.8.1",
@@ -32,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

@@ -1,9 +1,11 @@
 import socNetImg from '../../assets/img/projectsImg/SocNet.jpg'
 import todoImg from '../../assets/img/projectsImg/todoImg.jpg'
+import cardsImg from '../../assets/img/projectsImg/cards.jpg'
+import pizzasImg from '../../assets/img/projectsImg/pizzas.png'
 
 export type ProjectDescription = {
   title: string
-  description: { implemented: string[], techsUsed: string[] }
+  description: { about: string, techsUsed: string[] }
   style: { backgroundImage: string },
   refs: { project: string, code: string }
 }
@@ -12,19 +14,37 @@ export const projects: ProjectDescription[] = [
   {
     title: 'Social network',
     description: {
-      implemented: ['authorization;', 'edit profile;', 'follow/unfollow friends;', 'users list;', 'pagination;', 'adding posts and chat messages;', 'validation;', 'flux-architecture'],
-      techsUsed: ['TS;', 'react;', 'redux, redux-thunk;', 'axios']
+      about: 'Social network app with using react hooks, routing, lazy loading, working with REST api, login/logout flow,pagination, form and validation/file uploading using unit tests for code workability check.',
+      techsUsed: ['TypeScript;', 'React;', 'Redux-Toolkit;', 'Redux-thunk;', 'React-router-dom v6;', 'Axios;', 'SCSS;', 'React-hook-form;', 'Unit tests;']
     },
     style: { backgroundImage: `url(${socNetImg})` },
     refs: { project: '', code: '' }
   },
   {
-    title: 'Todo list',
+    title: 'To do list',
     description: {
-      implemented: ['authorization;', 'adding, removing, editing todo lists and tasks;', 'validation;', 'flux-architecture'],
-      techsUsed: ['TS;', 'redux-toolkit;', 'material UI;', 'formik;', 'unit tests;', 'storybook;', 'snapshot;', 'hot reloading;', 'axios;', 'react;', 'redux, redux-thunk']
+      about: 'To do list app created with react hooks, routing and redirects, material UI, REST api request/response flow, unit-tests and etc.',
+      techsUsed: ['TypeScript;', 'React;', 'Redux-Toolkit;', 'Redux-thunk;', 'React-router-dom v6;', 'Axios;', 'Material UI;', 'Formik;', 'Unit tests;']
     },
     style: { backgroundImage: `url(${todoImg})` },
+    refs: { project: '', code: '' }
+  },
+  {
+    title: 'Playing card',
+    description: {
+      about: 'Creating learning app in team with using git, work with axios (CRUD).',
+      techsUsed: ['TypeScript;', 'React;', 'Redux-Toolkit;', 'Redux-thunk;', 'React-router-dom v6;', 'Axios;', 'SCSS;', 'React-hook-form;', 'Unit tests;']
+    },
+    style: { backgroundImage: `url(${cardsImg})` },
+    refs: { project: '', code: '' }
+  },
+  {
+    title: 'Pizza',
+    description: {
+      about: 'Online pizza ordering shop.',
+      techsUsed: ['TypeScript;', 'React;', 'Redux-Toolkit;', 'Redux-thunk;', 'React-router-dom v6;', 'Axios;', 'SCSS;', 'Unit tests;']
+    },
+    style: { backgroundImage: `url(${pizzasImg})` },
     refs: { project: '', code: '' }
   },
 ]

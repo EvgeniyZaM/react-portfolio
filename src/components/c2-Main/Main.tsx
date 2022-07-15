@@ -12,7 +12,7 @@ export const Main = () => {
           <div className={s.aboutMe}>
             <span>Hi, there</span>
             <span>I am Evgeniy <span>Zamatevskiy</span></span>
-            <span><ReactTypingEffect typingDelay={1500} eraseDelay={3000} text={'Frontend developer.'} /></span>
+            <span><ReactTypingEffect typingDelay={1500} eraseDelay={3000} text={'Front-end developer.'} /></span>
           </div>
         </Fade>
         <Fade direction={'right'} triggerOnce>

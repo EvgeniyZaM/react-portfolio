@@ -14,7 +14,7 @@
 
     .contacts {
       @include flex (row, space-between, center);
-      width: 600px;
+      width: 556px;
       margin-top: 30px;
 
       .contactsItem {
@@ -35,6 +35,10 @@
 
       @media (max-width: 690px) {
         width: 340px;
+      }
+
+      @media (max-width: 400px) {
+        width: 240px;
       }
     }
 

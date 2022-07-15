@@ -15,21 +15,21 @@ export const Footer = () => {
 				<div className={s.container}>
 					<Title title={'Evgeniy Zamatevskiy'} />
 					<div className={s.contacts}>
-						<a href="">
+						<a href='https://github.com/EvgeniyZamatevskiy'>
 							<FontAwesomeIcon icon={faGithub} className={s.contactsItem} />
 						</a>
-						<a href="">
+						<a href='https://t.me/ZaM32'>
 							<FontAwesomeIcon icon={faTelegram} className={s.contactsItem} />
 						</a>
-						<a href=''>
+						<a href='https://www.linkedin.com/in/evgeniy-zamatevskiy-50079b234/'>
 							<FontAwesomeIcon icon={faLinkedinIn} className={s.contactsItem} />
 						</a>
-						<a href="">
+						{/* <a href=''>
 							<FontAwesomeIcon icon={faMailBulk} className={s.contactsItem} />
 						</a>
-						<a href="">
+						<a href=''>
 							<FontAwesomeIcon icon={faPhone} className={s.contactsItem} />
-						</a>
+						</a> */}
 					</div>
 					<span className={s.rights}>@2022 ZaM. All rights reserved</span>
 				</div>
