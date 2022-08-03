@@ -18,7 +18,7 @@ export const projects: ProjectDescription[] = [
       techsUsed: ['TypeScript;', 'React;', 'Redux-Toolkit;', 'Redux-thunk;', 'React-router-dom v6;', 'Axios;', 'SCSS;', 'React-hook-form;', 'Unit tests;']
     },
     style: { backgroundImage: `url(${socNetImg})` },
-    refs: { project: '', code: '' }
+    refs: { project: 'https://evgeniyzamatevskiy.github.io/react-social-network', code: 'https://github.com/EvgeniyZamatevskiy/react-social-network' }
   },
   {
     title: 'To do list',
@@ -27,7 +27,7 @@ export const projects: ProjectDescription[] = [
       techsUsed: ['TypeScript;', 'React;', 'Redux-Toolkit;', 'Redux-thunk;', 'React-router-dom v6;', 'Axios;', 'Material UI;', 'Formik;', 'Unit tests;']
     },
     style: { backgroundImage: `url(${todoImg})` },
-    refs: { project: '', code: '' }
+    refs: { project: 'https://evgeniyzamatevskiy.github.io/react-to-do-list', code: 'https://github.com/EvgeniyZamatevskiy/react-to-do-list' }
   },
   {
     title: 'Playing card',
@@ -36,7 +36,7 @@ export const projects: ProjectDescription[] = [
       techsUsed: ['TypeScript;', 'React;', 'Redux-Toolkit;', 'Redux-thunk;', 'React-router-dom v6;', 'Axios;', 'SCSS;', 'React-hook-form;', 'Unit tests;']
     },
     style: { backgroundImage: `url(${cardsImg})` },
-    refs: { project: '', code: '' }
+    refs: { project: 'https://evgeniyzamatevskiy.github.io/react-cards', code: 'https://github.com/EvgeniyZamatevskiy/react-cards' }
   },
   {
     title: 'Pizza',
@@ -45,6 +45,6 @@ export const projects: ProjectDescription[] = [
       techsUsed: ['TypeScript;', 'React;', 'Redux-Toolkit;', 'Redux-thunk;', 'React-router-dom v6;', 'Axios;', 'SCSS;', 'Unit tests;']
     },
     style: { backgroundImage: `url(${pizzasImg})` },
-    refs: { project: '', code: '' }
+    refs: { project: 'https://evgeniyzamatevskiy.github.io/react-pizza', code: 'https://github.com/EvgeniyZamatevskiy/react-pizza' }
   },
 ]
