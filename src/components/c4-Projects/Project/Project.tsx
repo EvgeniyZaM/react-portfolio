@@ -15,10 +15,7 @@ export const Project: React.FC<TProjectProps> = ({ project }) => {
       </div>
       <h3>{project.title}</h3>
       <div className={s.description}>
-        <div className={s.aboutProject}>
-          {project.description.about}
-        </div>
-        <b>Techs used:</b>
+        <b>Technology stack:</b>
         <ul>
           {project.description.techsUsed.map((tech, i) => <li key={i}>{tech}</li>)}
         </ul>

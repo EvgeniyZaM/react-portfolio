@@ -15,13 +15,13 @@ export const Footer = () => {
 				<div className={s.container}>
 					<Title title={'Evgeniy Zamatevskiy'} />
 					<div className={s.contacts}>
-						<a href='https://github.com/EvgeniyZamatevskiy'>
+						<a href='https://github.com/EvgeniyZamatevskiy' target={'_blank'} >
 							<FontAwesomeIcon icon={faGithub} className={s.contactsItem} />
 						</a>
-						<a href='https://t.me/ZaM32'>
+						<a href='https://t.me/ZaM32' target={'_blank'} >
 							<FontAwesomeIcon icon={faTelegram} className={s.contactsItem} />
 						</a>
-						<a href='https://www.linkedin.com/in/evgeniy-zamatevskiy-50079b234/'>
+						<a href='https://www.linkedin.com/in/evgeniy-zamatevskiy/' target={'_blank'}>
 							<FontAwesomeIcon icon={faLinkedinIn} className={s.contactsItem} />
 						</a>
 						{/* <a href=''>

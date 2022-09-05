@@ -8,6 +8,7 @@
   @include flex(column, center, center);
   border-bottom: 1px solid $decorColor;
   margin-bottom: 40px;
+  font-size: 14px;
 
   .projectImg {
     width: 100%;
@@ -53,9 +54,6 @@
     margin-bottom: 20px;
     margin-top: 15px;
     width: 90%;
-
-    .aboutProject {
-      margin-bottom: 15px;
-    }
+    // height: 250px;
   }
 }
